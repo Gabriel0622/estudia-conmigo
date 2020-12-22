@@ -12,7 +12,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <code></code> 
-          <h1>mira Amor jajaja UwU </h1>
+          <h1>empezando </h1>
         </p>
         <a
           className="App-link"
