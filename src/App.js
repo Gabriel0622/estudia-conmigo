@@ -1,29 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 import { Fragment } from 'react';
+import {BrowserRouter as Router} from 'react-router-dom'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Header from "./Components/Layout/Header";
+import User from "./Components/User"
+import Routes from "./Routes"
+
+
 
 function App() {
+
+
   return (
     <Fragment>
+    <Router>
+      <CssBaseline/>
+      <Header>
+      <User/>    
+      </Header>
+      <Routes/>
+    </Router>
 
-
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code></code> 
-          <h1>empezando </h1>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Entra y Aprende 
-        </a>
-      </header>
-    </div>    
+   
     </Fragment>
   );
 }
